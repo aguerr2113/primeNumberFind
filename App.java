@@ -33,15 +33,13 @@ public class App {
                 // clear input to run again
                 sc.next();
             }
-            sc.close();
-            if (isPrime(number)) {
-                System.out.println(number + " is a prime number! ");
-            } else {
-                System.out.println(number + " is NOT a prime number. ");
-            }
-
-
         }
+        if (isPrime(number)) {
+            System.out.println(number + " is a prime number! ");
+        } else {
+            System.out.println(number + " is NOT a prime number. ");
+        }
+        sc.close();
     }
     public static boolean isPrime(int n){
         if (n <= 1 ) {
